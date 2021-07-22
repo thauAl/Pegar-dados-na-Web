@@ -1,0 +1,44 @@
+	<head>
+		<meta charset="UTF-8">
+		<title>Minha Lista de tarefas </title>
+		
+		<link rel="stylesheet" type="text/css" href="css/formulario.css">
+		<!--<link rel="stylesheet" type="text/css" href="css/index.css"> -->
+
+	</head>
+	<body>
+
+		<header>
+			<div class="container1">
+				<h1 class="titulo">O que você vai fazer essa semana?</h1>
+			</div>
+		</header>
+		<main>
+			<section class="container2">
+				<h2>Meus afazeres</h2>
+				
+    <input type="text" name="filtro" id="filtrar-tabela" placeholder="Digite o nome do paciente">
+	<p> Para Excluir algo da lista aperte no excluir e depois de um "duploclick" no que você quer excluir</p>
+    <form action="https://api.staticforms.xyz/submit" method="POST">
+        <input type="hidden" name="accessKey" value="54e2350f-148f-4cee-a69a-7d2bedec6f07">
+
+         <label for="nome">Nome:</label>
+            <input id="nome" name="name" type="text" placeholder="digite o seu nome" class="campo">
+            
+            <input id="peso" name="phone" type="text" placeholder="digite seu telefone" class="campo campo-medio">
+           
+			<textarea name="message" placeholder="Sua tarefa(Data de começo e final)
+			Começo: exemplo: 01/01/21
+			final: exemplo: 02/02/21"></textarea>
+           
+	
+
+			<button class="botão-de-continuidade">Enviar para seu email</button>
+            </form>	
+
+
+<script src="js/Adicionador.js"></script>
+<script src="js/adiciona-novaTarefa.js"></script>
+<script src="js/Filtrar-tarefas.js"></script>
+	</body>
+</html>  
